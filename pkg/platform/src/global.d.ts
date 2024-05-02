@@ -21,10 +21,10 @@
  * @packageDocumentation
  */
 
-import "@types/node";
 import * as util from "@pulumi/pulumi";
+import "@types/node";
 import * as _sst from "./components/index";
-import { $config as config, App } from "./config";
+import { App } from "./config";
 
 type Simplify<T> = {
   [K in keyof T]: T[K];
@@ -210,7 +210,7 @@ declare global {
    *
    * @example
    *
-   * For example, to set a default runtime for all function compoennts.
+   * For example, to set a default runtime for all function components.
    *
    * ```ts
    * $transform(sst.aws.Function, (args, opts) => {
